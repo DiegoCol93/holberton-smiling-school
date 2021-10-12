@@ -1,0 +1,303 @@
+:root {
+  --hero-title-familty-font: "Source Sans Pro";
+  --hero-title-size: 120px;
+  --color-purple: #c271ff;
+  --font-learn: 32px;
+  --philip-size: 12px;
+  --color-black: #000;
+  --color-dark: #071629;
+  --color-green: #82d24f;
+}
+
+.section-1 {
+  background-image: url(images/pic_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.section-2 {
+  background-image: url(images/pic_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.section-3 {
+  background-image: url(images/pic_3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.hero-title {
+  font-family: var(--hero-title-familty-font);
+  font-size: var(--hero-title-size);
+}
+
+.btn {
+  background-color: var(--color-purple);
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.purple {
+  color: var(--color-purple);
+}
+
+.learn-font {
+  font-size: var(--font-learn);
+  font-family: var(--hero-title-familty-font);
+}
+
+.philip {
+  font-size: var(--philip-size);
+  color: var(--color-black);
+}
+
+.header #menu-btn {
+  display: none;
+}
+
+.carousel-section {
+  background: var(--color-purple);
+}
+
+.bg-purple {
+  background-color: var(--color-purple);
+}
+
+.carousel-text {
+  margin-left: -35rem;
+}
+
+.play-img {
+  margin-left: 5rem;
+  margin-top: 2rem;
+}
+
+.reviewer-name {
+  color: var(--color-purple);
+  margin-left: 4.2rem;
+  margin-top: -2.3rem;
+}
+
+.card-title {
+  color: var(--color-black);
+}
+
+.time {
+  color: var(--color-purple);
+}
+
+.arrow {
+  color: var(--color-black);
+  height: 15%;
+}
+
+.smiley {
+  margin-left: 4rem;
+}
+
+.free-membership {
+  background-color: var(--color-dark);
+}
+
+.footer {
+  background-color: var(--color-dark);
+}
+
+.copyright {
+  opacity: 35.17%;
+}
+
+.socials a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+}
+
+.dollars {
+  font-size: 44px;
+}
+
+.per-month {
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+@media (max-width: 576px) {
+  .header-nav .nav-link {
+    width: 100%;
+    margin: 0.5rem auto;
+    line-height: 1;
+  }
+  .header-nav {
+    display: none;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  #menu {
+    cursor: pointer;
+    background: white;
+    height: 2px;
+    width: 12px;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    display: block;
+  }
+
+  #menu::before {
+    content: "";
+    background: white;
+    height: 2px;
+    width: 20px;
+    position: relative;
+    top: -0.4rem;
+    display: block;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+
+  #menu::after {
+    content: "";
+    background: white;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    top: 0.3rem;
+    display: block;
+    transition: all 0.2s ease;
+  }
+
+  #menu-btn:checked ~ .header-nav {
+    display: block;
+  }
+
+  #menu-btn:checked ~ #menu {
+    background: transparent;
+  }
+
+  #menu-btn:checked ~ #menu::after {
+    width: 1.3rem;
+    top: 0.05rem;
+    transform: rotate(-45deg);
+  }
+
+  #menu-btn:checked ~ #menu::before {
+    transform: rotate(45deg);
+    top: 0.19rem;
+  }
+}
+
+/*font styles*/
+
+/* fonts styles */
+@font-face {
+  font-family: "holberton_school-icon";
+  src: url("holberton_school-icon/fonts/holberton_school-icon.eot?1hr2a7");
+  src: url("holberton_school-icon/fonts/holberton_school-icon.eot?1hr2a7#iefix")
+      format("embedded-opentype"),
+    url("holberton_school-icon/fonts/holberton_school-icon.ttf?1hr2a7")
+      format("truetype"),
+    url("holberton_school-icon/fonts/holberton_school-icon.woff?1hr2a7")
+      format("woff"),
+    url("holberton_school-icon/fonts/holberton_school-icon.svg?1hr2a7#holberton_school-icon")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="holberton_school-icon-"],
+[class*=" holberton_school-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "holberton_school-icon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.holberton_school-icon-arrow_1:before {
+  content: "\e900";
+}
+.holberton_school-icon-arrow_2:before {
+  content: "\e901";
+}
+.holberton_school-icon-arrow_3:before {
+  content: "\e902";
+}
+.holberton_school-icon-arrow_4:before {
+  content: "\e903";
+}
+.holberton_school-icon-arrow_5:before {
+  content: "\e904";
+}
+.holberton_school-icon-check:before {
+  content: "\e905";
+  color: var(--color-green);
+  font-size: 30px;
+}
+.holberton_school-icon-ic_bag:before {
+  content: "\e906";
+}
+.holberton_school-icon-ic_cart:before {
+  content: "\e907";
+}
+.holberton_school-icon-ic_facebook:before {
+  content: "\e908";
+}
+.holberton_school-icon-ic_hearing:before {
+  content: "\e909";
+}
+.holberton_school-icon-ic_instagram:before {
+  content: "\e90a";
+}
+.holberton_school-icon-ic_laptop:before {
+  content: "\e90b";
+}
+.holberton_school-icon-ic_money:before {
+  content: "\e90c";
+}
+.holberton_school-icon-ic_music:before {
+  content: "\e90d";
+}
+.holberton_school-icon-ic_sound:before {
+  content: "\e90e";
+}
+.holberton_school-icon-ic_twitter:before {
+  content: "\e90f";
+}
+.holberton_school-icon-ic_video:before {
+  content: "\e910";
+}
+.holberton_school-icon-menu:before {
+  content: "\e911";
+}
+.holberton_school-icon-search_1:before {
+  content: "\e912";
+}
+.holberton_school-icon-search_2:before {
+  content: "\e913";
+}
+.holberton_school-icon-star:before {
+  content: "\e914";
+}
